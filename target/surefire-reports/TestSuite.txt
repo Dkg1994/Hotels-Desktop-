@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 32.554 sec <<< FAILURE! - in TestSuite
+f(com.goibibo.WebApplication.Hotels.International_Hotel)  Time elapsed: 21.533 sec  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+chrome not reachable
+  (Session info: chrome=75.0.3770.80)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DEVENDRAGUPTA', ip: '172.100.151.214', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.80, chrome: {chromedriverVersion: 75.0.3770.8 (681f24ea911fe7..., userDataDir: C:\Users\DEVEND~1.GUP\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:64210}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 83fc60168352ba13a34272d6ed98e70a
+	at com.goibibo.WebApplication.Hotels.International_Hotel.f(International_Hotel.java:42)
+
+f(com.goibibo.WebApplication.Hotels.Dom_Hotel)  Time elapsed: 9.551 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=75.0.3770.80)
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'DEVENDRAGUPTA', ip: '172.100.151.214', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 75.0.3770.80, chrome: {chromedriverVersion: 75.0.3770.8 (681f24ea911fe7..., userDataDir: C:\Users\DEVEND~1.GUP\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:64268}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: eec6219cd9725b7c5008467ff93ceb69
+*** Element info: {Using=xpath, value=//*[@id="header"]/div[1]/ul/li[2]/a/i}
+	at com.goibibo.WebApplication.Hotels.Dom_Hotel.f(Dom_Hotel.java:53)
+
