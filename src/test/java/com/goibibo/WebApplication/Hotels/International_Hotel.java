@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
@@ -66,10 +67,20 @@ System.setProperty("webdriver.chrome.driver","D:\\Eclips backup\\Jar Files for u
 	driver.findElement(By.xpath("//*[@id=\"srpContainer\"]/div[2]/div[2]/div/div[1]/div/ul/li[5]/div/div[3]")).click();
 	
 	
-	Thread.sleep(1000);
+	Thread.sleep(3000);
 	
-	driver.findElement((By.xpath("//*[@id=\"srpContainer\"]/div[2]/div[2]/div/div[2]/div/div[5]/div[1]/div/div/section[1]/div[2]/div/div[3]/div[2]/div[2]/button"))).click();
-	test1.pass("Click On Hotel");
+	
+	
+	JavascriptExecutor js = (JavascriptExecutor) driver;
+	        js.executeScript("window.scrollBy(0,100)");
+	        
+	        Thread.sleep(4000);
+
+	  driver.findElement(By.xpath("//*[@id=\"srpContainer\"]/div[2]/div[2]/div/div[2]/div/div[5]/div[1]/div/div/section[1]/div[2]/div/div[3]/div[2]/div[2]/button")).click();
+	  test1.pass("Click on Book Now button");
+	
+//	driver.findElement((By.xpath("//*[@id=\"srpContainer\"]/div[2]/div[2]/div/div[2]/div/div[5]/div[1]/div/div/section[1]/div[2]/div/div[3]/div[2]/div[2]/button"))).click();
+//	test1.pass("Click On Hotel");
 	
 	Thread.sleep(5000);
 	
